@@ -45,7 +45,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /home/ubuntu/fastapi-book-project
-            git fetch origin main
+            git pull origin main
             git reset --hard origin/main
             source venv/bin/activate
             pip install -r requirements.txt
